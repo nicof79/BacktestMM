@@ -12,7 +12,7 @@ warnings.filterwarnings('ignore')
 
 # Paramètres de recherche
 PERIODES = [2, 3, 5, 8, 10, 12, 13, 15, 20, 21, 26, 30, 34, 50, 55, 89, 100, 200]
-TYPES = ["SMA", "EMA"]  # conforme à ta demande
+TYPES = ["SMA", "EMA", "WMA", "HMA"]
 RATIO_MIN = 1.5
 RATIO_MAX = 13.0
 
