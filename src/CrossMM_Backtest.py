@@ -1,20 +1,20 @@
 import yfinance as yf
 import pandas as pd
 import numpy as np
-from datetime import datetime
 import warnings
 from IPython.display import display
 
-# Configuration d'affichage et suppression des warnings
+# Configuration
 pd.set_option('display.max_rows', None)
 pd.set_option('display.max_columns', None)
 pd.set_option('display.width', 1000)
 warnings.filterwarnings('ignore')
 
-# Types et périodes
-TYPES = ["SMA", "EMA", "WMA", "HMA"]
+# Paramètres de recherche
 PERIODES = [2, 3, 5, 8, 10, 12, 13, 15, 20, 21, 26, 30, 34, 50, 55, 89, 100, 200]
-TYPES = ["SMA", "EMA"]
+TYPES = ["SMA", "EMA"]  # conforme à ta demande
+RATIO_MIN = 1.5
+RATIO_MAX = 13.0
 
 def calculate_ma(series, period, ma_type):
     if period < 1:
@@ -24,29 +24,30 @@ def calculate_ma(series, period, ma_type):
     elif ma_type == "EMA":
         return series.ewm(span=period, adjust=False).mean()
     elif ma_type == "WMA":
-        if period == 1:
-            return series.copy()
         weights = np.arange(1, period + 1)
         return series.rolling(period).apply(lambda prices: np.dot(prices, weights) / weights.sum(), raw=True)
     elif ma_type == "HMA":
-        if period == 1:
-            return series.copy()
-        half_length = max(1, int(period / 2))
-        sqrt_length = max(1, int(np.sqrt(period)))
-        wma_half = calculate_ma(series, half_length, "WMA")
+        half = max(1, int(period / 2))
+        sq = max(1, int(np.sqrt(period)))
+        wma_half = calculate_ma(series, half, "WMA")
         wma_full = calculate_ma(series, period, "WMA")
         diff = 2 * wma_half - wma_full
-        return calculate_ma(diff, sqrt_length, "WMA")
+        return calculate_ma(diff, sq, "WMA")
     else:
-        raise ValueError(f"Type de moyenne mobile inconnu : {ma_type}")
+        raise ValueError(f"Unknown MA type: {ma_type}")
 
-def backtest_moving_averages(symbol, start_date='2000-01-01', end_date='2025-01-01',
-                             initial_capital=10000.0, max_allocation_pct=0.20,
-                             ratio_min=1.5, ratio_max=13.0, min_data_days=200):
+def backtest_moving_averages(symbol,
+                             start_date='2000-01-01',
+                             end_date='2025-01-01',
+                             initial_capital=10000.0,
+                             max_allocation_pct=0.20,
+                             ratio_min=RATIO_MIN,
+                             ratio_max=RATIO_MAX,
+                             min_data_days=200):
     print(f"Analyse de {symbol} du {start_date} au {end_date}...")
     data = yf.download(symbol, start=start_date, end=end_date, progress=False)
     print(f"Données brutes récupérées : {len(data)} lignes")
-    if len(data) == 0:
+    if data is None or len(data) == 0:
         print("Aucune donnée trouvée")
         return None, None, None
 
@@ -58,10 +59,10 @@ def backtest_moving_averages(symbol, start_date='2000-01-01', end_date='2025-01-
 
     buy_hold_return = float(((data['Close'].iloc[-1] - data['Close'].iloc[0]) / data['Close'].iloc[0]) * 100)
     results = []
-
     total_tests = 0
-    for type1 in TYPES:
-        for type2 in TYPES:
+
+    for type_short in TYPES:
+        for type_long in TYPES:
             for p1 in PERIODES:
                 for p2 in PERIODES:
                     if p1 >= p2:
@@ -75,50 +76,50 @@ def backtest_moving_averages(symbol, start_date='2000-01-01', end_date='2025-01-
                     total_tests += 1
                     df = data.copy()
 
-                    # Calcul des MM selon le type demandé
-                    df['MM_Short'] = calculate_ma(df['Close'], p1, type1)
-                    df['MM_Long'] = calculate_ma(df['Close'], p2, type2)
+                    # calculs des MM
+                    df['MM_Short'] = calculate_ma(df['Close'], p1, type_short)
+                    df['MM_Long'] = calculate_ma(df['Close'], p2, type_long)
 
-                    # Détection des croisements (Signal à la clôture du jour j, exécution ouverture j+1)
+                    # détection des croisements (haussier / baissier)
+                    df['delta'] = df['MM_Short'] - df['MM_Long']
+                    df['delta_prev'] = df['delta'].shift(1)
+
+                    bull_cross = (df['delta_prev'] <= 0) & (df['delta'] > 0)   # achat
+                    bear_cross = (df['delta_prev'] >= 0) & (df['delta'] < 0)   # vente
+
                     df['Signal'] = 0
-                    df.loc[df['MM_Short'] > df['MM_Long'], 'Signal'] = 1
-                    df['Position'] = df['Signal'].diff()
+                    df.loc[bull_cross, 'Signal'] = 1
+                    df.loc[bear_cross, 'Signal'] = -1
+                    df['Position'] = df['Signal']  # on lit Signal à la clôture j
 
-                    # Gestion du capital et des trades
-                    current_capital = initial_capital
+                    # money management & simulation
+                    current_capital = float(initial_capital)
                     trades = []
                     open_trades = []
 
-                    # Boucle robuste : accès par .iloc pour garantir des scalaires
                     n = len(df)
                     for j in range(n - 1):
-                        # ligne j et j+1
-                        row = df.iloc[j]
-                        next_row = df.iloc[j + 1]
+                        row = df.iloc[j]       # jour j (clôture)
+                        next_row = df.iloc[j + 1]  # jour j+1 (open pour exécution)
 
-                        # Récupérer Position en scalaire sécurisé
-                        pos_val = row.get('Position', np.nan)
+                        # récupérer signal de façon sûre
+                        sig = row.get('Signal', 0)
                         try:
-                            # forcer en float si possible
-                            pos_scalar = float(pos_val)
+                            sig_scalar = float(sig)
                         except Exception:
-                            pos_scalar = np.nan
+                            sig_scalar = 0.0
 
-                        if np.isnan(pos_scalar):
-                            buy_signal = False
-                            sell_signal = False
-                        else:
-                            buy_signal = (pos_scalar == 1.0)
-                            sell_signal = (pos_scalar == -1.0)
+                        buy_signal = (sig_scalar == 1.0)
+                        sell_signal = (sig_scalar == -1.0)
 
-                        # Prix d'exécution (Open du jour suivant) en scalaire sécurisé
-                        exec_val = next_row.get('Open', np.nan)
+                        # prix d'exécution = Open du jour suivant (safe cast)
+                        exec_open = next_row.get('Open', np.nan)
                         try:
-                            execution_price = float(exec_val)
+                            execution_price = float(exec_open)
                         except Exception:
-                            continue  # pas de prix d'exécution
+                            continue
 
-                        # CLÔTURE (FIFO)
+                        # clôture FIFO si signal vente
                         if sell_signal and open_trades:
                             buy_data = open_trades.pop(0)
                             buy_date = buy_data['buy_date']
@@ -142,7 +143,7 @@ def backtest_moving_averages(symbol, start_date='2000-01-01', end_date='2025-01-
                                 'is_closed': True
                             })
 
-                        # OUVERTURE
+                        # ouverture si signal achat
                         elif buy_signal:
                             max_order_value = current_capital * max_allocation_pct
                             quantity_to_buy = np.floor(max_order_value / execution_price)
@@ -160,7 +161,7 @@ def backtest_moving_averages(symbol, start_date='2000-01-01', end_date='2025-01-
                                 'order_value': float(order_value)
                             })
 
-                    # Clôture des positions ouvertes à la fin du backtest
+                    # clôture des positions ouvertes à la fin du backtest
                     if open_trades:
                         last_date = df.index[-1]
                         last_price = float(df['Close'].iloc[-1])
@@ -189,7 +190,7 @@ def backtest_moving_averages(symbol, start_date='2000-01-01', end_date='2025-01-
                     if len(trades) == 0:
                         continue
 
-                    # Statistiques
+                    # statistiques
                     total_return = ((current_capital - initial_capital) / initial_capital) * 100
                     total_profit_eur = current_capital - initial_capital
                     gains = [t['pct_change'] for t in trades if t['pct_change'] > 0]
@@ -203,11 +204,11 @@ def backtest_moving_averages(symbol, start_date='2000-01-01', end_date='2025-01-
                     min_loss = float(min(losses)) if len(losses) > 0 else 0.0
 
                     results.append({
-                        'Type_Court': type1,
-                        'Type_Long': type2,
+                        'Type_Court': type_short,
+                        'Type_Long': type_long,
                         'MM_Court': int(p1),
                         'MM_Long': int(p2),
-                        'Combinaison': f'{type1}{p1}/{type2}{p2}',
+                        'Combinaison': f'{type_short}{p1}/{type_long}{p2}',
                         'Nb_Trades': int(len(trades)),
                         'Capital_Initial_€': float(initial_capital),
                         'Capital_Final_€': float(current_capital),
@@ -242,12 +243,10 @@ def display_results(results_df, best_strategy, buy_hold_return):
     display_df = results_df[['Combinaison', 'Nb_Trades', 'Capital_Final_€', 'Profit_Total_€',
                              'Taux_Reussite_%', 'Rendement_Total_%', 'Gain_Moyen_%', 'Gain_Max_%',
                              'Perte_Moyenne_%', 'Perte_Max_%']].copy()
-
     for col in ['Taux_Reussite_%', 'Rendement_Total_%', 'Gain_Moyen_%', 'Gain_Max_%', 'Perte_Moyenne_%', 'Perte_Max_%']:
-         display_df[col] = display_df[col].apply(lambda x: f"{x:.2f}%")
-
+        display_df[col] = display_df[col].apply(lambda x: f"{x:.2f}%")
     for col in ['Capital_Final_€', 'Profit_Total_€']:
-         display_df[col] = display_df[col].apply(lambda x: f"{x:,.2f}€".replace(",", "X").replace(".", ",").replace("X", " "))
+        display_df[col] = display_df[col].apply(lambda x: f"{x:,.2f}€".replace(",", "X").replace(".", ",").replace("X", " "))
 
     display(display_df)
 
@@ -261,12 +260,6 @@ def display_results(results_df, best_strategy, buy_hold_return):
     print(f"Profit Total: {best_strategy['Profit_Total_€']:,.2f}€".replace(",", "X").replace(".", ",").replace("X", " "))
     print(f"Rendement total: {best_strategy['Rendement_Total_%']:.2f}%")
     print(f"Taux de réussite: {best_strategy['Taux_Reussite_%']:.2f}%")
-    print(f"\nGains (pourcentages par trade):")
-    print(f" Moyen: {best_strategy['Gain_Moyen_%']:.2f}%")
-    print(f" Maximum: {best_strategy['Gain_Max_%']:.2f}%")
-    print(f"\nPertes (pourcentages par trade):")
-    print(f" Moyenne: {best_strategy['Perte_Moyenne_%']:.2f}%")
-    print(f" Maximum: {best_strategy['Perte_Max_%']:.2f}%")
 
     print("\n" + "="*100)
     print("COMPARAISON BUY & HOLD")
@@ -275,16 +268,15 @@ def display_results(results_df, best_strategy, buy_hold_return):
     print(f"Buy & Hold (acheter et garder) : {buy_hold_return:.2f}%")
     difference = best_strategy['Rendement_Total_%'] - buy_hold_return
     if difference > 0:
-        print(f"\n✅ Performance supérieure: +{difference:.2f}% vs Buy & Hold")
+        print(f"\nPerformance supérieure: +{difference:.2f}% vs Buy & Hold")
     else:
-        print(f"\n❌ Performance inférieure: {difference:.2f}% vs Buy & Hold")
+        print(f"\nPerformance inférieure: {difference:.2f}% vs Buy & Hold")
     print("\n" + "="*100)
     print('HISTORIQUE DES TRADES (Meilleure Stratégie)')
     print("="*100)
 
     trades = best_strategy['trades']
     trades_data = []
-
     for i, trade in enumerate(trades, 1):
         result_type = "GAIN" if trade['profit_€'] > 0 else "PERTE"
         trades_data.append({
@@ -302,19 +294,17 @@ def display_results(results_df, best_strategy, buy_hold_return):
     trades_df = pd.DataFrame(trades_data)
     display(trades_df)
 
-# ================================================================
-# EXECUTION (paramètres)
-# ================================================================
-SYMBOL = 'mc.PA'  # exemple: 'AAPL', 'TSLA', '^FCHI', 'MC.PA' ou 'mc.PA'
+# =========================
+# Paramètres d'exécution
+# =========================
+SYMBOL = 'MC.PA'   # exemple : 'AAPL', 'TSLA', '^FCHI', 'MC.PA'
 START_DATE = '2020-01-01'
 END_DATE = '2025-10-01'
 CAPITAL_INITIAL = 10000.0
 ALLOCATION_MAX = 0.20
 
-print(f"--- PARAMETRES DE GESTION DU CAPITAL ---")
 print(f"Capital de départ: {CAPITAL_INITIAL:,.2f}€".replace(",", "X").replace(".", ",").replace("X", " "))
-print(f"Allocation max par trade: {ALLOCATION_MAX*100:.0f}%")
-print("------------------------------------------\n")
+print(f"Allocation max par trade: {ALLOCATION_MAX*100:.0f}%\n")
 
 results_df, best_strategy, buy_hold_return = backtest_moving_averages(
     symbol=SYMBOL,
@@ -322,10 +312,12 @@ results_df, best_strategy, buy_hold_return = backtest_moving_averages(
     end_date=END_DATE,
     initial_capital=CAPITAL_INITIAL,
     max_allocation_pct=ALLOCATION_MAX,
-    ratio_min=1.5,
-    ratio_max=13.0,
+    ratio_min=RATIO_MIN,
+    ratio_max=RATIO_MAX,
     min_data_days=200
 )
 
 if results_df is not None:
     display_results(results_df, best_strategy, buy_hold_return)
+else:
+    print("Aucun résultat à afficher.")
