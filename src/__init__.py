@@ -1,0 +1,3 @@
+"""
+BacktestMM package
+"""

@@ -1,0 +1,592 @@
+2025-10-21 13:44:29,397 - INFO - Starting CrossMM_Backtest (V1.3)
+2025-10-21 13:44:29,397 - INFO - Downloading data for MC.PA from 2020-01-01 to 2025-10-01
+2025-10-21 13:44:31,475 - INFO - Data loaded: 1474 rows
+2025-10-21 13:44:31,817 - INFO - Tested SMA 2/26 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:32,144 - INFO - Tested SMA 2/30 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:32,479 - INFO - Tested SMA 2/34 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:32,806 - INFO - Tested SMA 2/50 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:33,136 - INFO - Tested SMA 2/55 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:33,465 - INFO - Tested SMA 2/89 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:33,788 - INFO - Tested SMA 2/100 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:34,112 - INFO - Tested SMA 2/200 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:34,433 - INFO - Tested SMA 3/26 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:34,753 - INFO - Tested SMA 3/30 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:35,077 - INFO - Tested SMA 3/34 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:35,408 - INFO - Tested SMA 3/50 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:35,734 - INFO - Tested SMA 3/55 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:36,057 - INFO - Tested SMA 3/89 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:36,377 - INFO - Tested SMA 3/100 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:36,697 - INFO - Tested SMA 3/200 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:37,018 - INFO - Tested SMA 5/26 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:37,338 - INFO - Tested SMA 5/30 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:37,661 - INFO - Tested SMA 5/34 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:37,980 - INFO - Tested SMA 5/50 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:38,299 - INFO - Tested SMA 5/55 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:38,619 - INFO - Tested SMA 5/89 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:38,946 - INFO - Tested SMA 5/100 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:39,269 - INFO - Tested SMA 5/200 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:39,593 - INFO - Tested SMA 8/26 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:39,915 - INFO - Tested SMA 8/30 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:40,237 - INFO - Tested SMA 8/34 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:40,573 - INFO - Tested SMA 8/50 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:40,924 - INFO - Tested SMA 8/55 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:41,260 - INFO - Tested SMA 8/89 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:41,587 - INFO - Tested SMA 8/100 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:41,912 - INFO - Tested SMA 8/200 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:42,239 - INFO - Tested SMA 10/26 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:42,567 - INFO - Tested SMA 10/30 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:42,894 - INFO - Tested SMA 10/34 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:43,217 - INFO - Tested SMA 10/50 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:43,543 - INFO - Tested SMA 10/55 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:43,871 - INFO - Tested SMA 10/89 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:44,197 - INFO - Tested SMA 10/100 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:44,523 - INFO - Tested SMA 10/200 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:44,850 - INFO - Tested SMA 12/26 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:45,176 - INFO - Tested SMA 12/30 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:45,501 - INFO - Tested SMA 12/34 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:45,831 - INFO - Tested SMA 12/50 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:46,155 - INFO - Tested SMA 12/55 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:46,481 - INFO - Tested SMA 12/89 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:46,806 - INFO - Tested SMA 12/100 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:47,132 - INFO - Tested SMA 12/200 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:47,458 - INFO - Tested SMA 13/26 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:47,784 - INFO - Tested SMA 13/30 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:48,109 - INFO - Tested SMA 13/34 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:48,435 - INFO - Tested SMA 13/50 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:48,761 - INFO - Tested SMA 13/55 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:49,085 - INFO - Tested SMA 13/89 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:49,410 - INFO - Tested SMA 13/100 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:49,735 - INFO - Tested SMA 13/200 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:50,058 - INFO - Tested SMA 15/26 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:50,380 - INFO - Tested SMA 15/30 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:50,704 - INFO - Tested SMA 15/34 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:51,029 - INFO - Tested SMA 15/50 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:51,352 - INFO - Tested SMA 15/55 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:51,674 - INFO - Tested SMA 15/89 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:51,996 - INFO - Tested SMA 15/100 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:52,319 - INFO - Tested SMA 15/200 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:52,644 - INFO - Tested SMA 20/26 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:52,968 - INFO - Tested SMA 20/30 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:53,295 - INFO - Tested SMA 20/34 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:53,618 - INFO - Tested SMA 20/50 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:53,945 - INFO - Tested SMA 20/55 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:54,267 - INFO - Tested SMA 20/89 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:54,588 - INFO - Tested SMA 20/100 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:54,911 - INFO - Tested SMA 20/200 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:55,236 - INFO - Tested SMA 21/26 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:55,555 - INFO - Tested SMA 21/30 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:55,877 - INFO - Tested SMA 21/34 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:56,198 - INFO - Tested SMA 21/50 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:56,526 - INFO - Tested SMA 21/55 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:56,846 - INFO - Tested SMA 21/89 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:57,169 - INFO - Tested SMA 21/100 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:57,489 - INFO - Tested SMA 21/200 -> final_capital=10000.00 nb_trades=0
+2025-10-21 13:44:57,495 - INFO - Saved results to results/results_20251021_114457.csv
+2025-10-21 13:54:08,864 - INFO - Starting CrossMM_Backtest (V1.3)
+2025-10-21 13:54:08,864 - INFO - Downloading data for MC.PA from 2020-01-01 to 2025-10-01
+2025-10-21 13:54:09,330 - INFO - Data loaded: 1474 rows
+2025-10-21 13:54:09,342 - INFO - Génération de 115 combinaisons valides de moyennes mobiles.
+2025-10-21 13:54:46,903 - INFO - 115 combinaisons testées.
+2025-10-21 13:54:46,909 - INFO - Saved results to results/results_20251021_115446.csv
+2025-10-21 13:57:20,735 - INFO - Starting CrossMM_Backtest (V1.3)
+2025-10-21 13:57:20,735 - INFO - Downloading data for MC.PA from 2020-01-01 to 2025-10-01
+2025-10-21 13:57:21,251 - INFO - Data loaded: 1474 rows
+2025-10-21 13:57:21,263 - INFO - Génération de 115 combinaisons valides de moyennes mobiles.
+2025-10-21 13:57:58,843 - INFO - 115 combinaisons testées.
+2025-10-21 13:57:58,848 - INFO - Saved results to results/results_20251021_115758.csv
+2025-10-21 16:30:26,791 - INFO - Starting CrossMM_Backtest (V1.3)
+2025-10-21 16:30:26,791 - INFO - Downloading data for MC.PA from 2020-01-01 to 2025-10-01
+2025-10-21 16:30:27,946 - INFO - Data loaded: 1474 rows
+2025-10-21 16:32:37,091 - INFO - Starting CrossMM_Backtest (V1.3)
+2025-10-21 16:32:37,091 - INFO - Downloading data for MC.PA from 2020-01-01 to 2025-10-01
+2025-10-21 16:32:37,776 - INFO - Data loaded: 1474 rows
+2025-10-21 16:32:38,127 - INFO - Génération de 1840 combinaisons valides de moyennes mobiles.
+2025-10-21 16:42:46,153 - INFO - 1840 combinaisons testées.
+2025-10-21 17:49:11,881 - INFO - Saved results to results/results_20251021_154911.csv
+2025-10-21 17:53:45,188 - INFO - Starting CrossMM_Backtest (V1.3)
+2025-10-21 17:53:45,188 - INFO - Downloading data for MC.PA from 2020-01-01 to 2025-10-01
+2025-10-21 17:53:45,816 - INFO - Data loaded: 1474 rows
+2025-10-21 17:53:45,827 - INFO - Génération de 65 combinaisons valides de moyennes mobiles.
+2025-10-21 17:54:07,018 - INFO - 65 combinaisons testées.
+2025-10-21 17:54:07,022 - INFO - Saved results to results/results_20251021_155407.csv
+2025-10-21 18:00:46,138 - INFO - Starting CrossMM_Backtest (V1.3)
+2025-10-21 18:00:46,138 - INFO - Downloading data for MC.PA from 2020-01-01 to 2025-10-01
+2025-10-21 18:00:46,833 - INFO - Data loaded: 1474 rows
+2025-10-21 18:00:46,847 - INFO - Génération de 65 combinaisons valides de moyennes mobiles.
+2025-10-21 18:01:07,812 - INFO - 65 combinaisons testées.
+2025-10-21 18:01:07,816 - INFO - Saved results to results/results_20251021_160107.csv
+2025-10-21 18:03:53,194 - INFO - Starting CrossMM_Backtest (V1.3)
+2025-10-21 18:03:53,194 - INFO - Downloading data for MC.PA from 2020-01-01 to 2025-10-01
+2025-10-21 18:03:53,897 - INFO - Data loaded: 1474 rows
+2025-10-21 18:03:53,913 - INFO - Génération de 65 combinaisons valides de moyennes mobiles.
+2025-10-21 18:04:25,496 - INFO - 65 combinaisons testées.
+2025-10-21 18:04:25,504 - INFO - Saved results to results/results_20251021_160425.csv
+2025-10-21 18:06:09,999 - INFO - Starting CrossMM_Backtest (V1.3)
+2025-10-21 18:06:10,000 - INFO - Downloading data for MC.PA from 2020-01-01 to 2025-10-01
+2025-10-21 18:06:10,836 - INFO - Data loaded: 1474 rows
+2025-10-21 18:06:10,851 - INFO - Génération de 65 combinaisons valides de moyennes mobiles.
+2025-10-21 18:06:31,633 - INFO - 65 combinaisons testées.
+2025-10-21 18:06:31,638 - INFO - Saved results to results/results_20251021_160631.csv
+2025-10-21 18:09:06,349 - INFO - Starting CrossMM_Backtest (V1.3)
+2025-10-21 18:09:06,349 - INFO - Downloading data for MC.PA from 2020-01-01 to 2025-10-01
+2025-10-21 18:09:12,440 - INFO - Data loaded: 1474 rows
+2025-10-21 18:09:12,455 - INFO - Génération de 65 combinaisons valides de moyennes mobiles.
+2025-10-21 18:09:33,403 - INFO - 65 combinaisons testées.
+2025-10-21 18:09:33,407 - INFO - Saved results to results/results_20251021_160933.csv
+2025-10-21 18:10:26,921 - INFO - Starting CrossMM_Backtest (V1.3)
+2025-10-21 18:10:26,921 - INFO - Downloading data for MC.PA from 2020-01-01 to 2025-10-01
+2025-10-21 18:10:27,722 - INFO - Data loaded: 1474 rows
+2025-10-21 18:10:27,737 - INFO - Génération de 65 combinaisons valides de moyennes mobiles.
+2025-10-21 18:10:48,744 - INFO - 65 combinaisons testées.
+2025-10-21 18:10:48,749 - INFO - Saved results to results/results_20251021_161048.csv
+2025-10-21 18:12:51,263 - INFO - Starting CrossMM_Backtest (V1.3)
+2025-10-21 18:12:51,263 - INFO - Downloading data for MC.PA from 2020-01-01 to 2025-10-01
+2025-10-21 18:12:52,206 - INFO - Data loaded: 1474 rows
+2025-10-21 18:12:52,223 - INFO - Génération de 65 combinaisons valides de moyennes mobiles.
+2025-10-21 18:12:52,226 - INFO - Croisements détectés pour SMA_2/SMA_5
+2025-10-21 18:12:52,557 - INFO - Croisements détectés pour SMA_2/SMA_8
+2025-10-21 18:12:52,879 - INFO - Croisements détectés pour SMA_2/SMA_10
+2025-10-21 18:12:53,204 - INFO - Croisements détectés pour SMA_2/SMA_12
+2025-10-21 18:12:53,530 - INFO - Croisements détectés pour SMA_3/SMA_8
+2025-10-21 18:12:53,851 - INFO - Croisements détectés pour SMA_3/SMA_10
+2025-10-21 18:12:54,176 - INFO - Croisements détectés pour SMA_3/SMA_12
+2025-10-21 18:12:54,501 - INFO - Croisements détectés pour SMA_3/SMA_13
+2025-10-21 18:12:54,824 - INFO - Croisements détectés pour SMA_3/SMA_15
+2025-10-21 18:12:55,147 - INFO - Croisements détectés pour SMA_5/SMA_10
+2025-10-21 18:12:55,474 - INFO - Croisements détectés pour SMA_5/SMA_12
+2025-10-21 18:12:55,797 - INFO - Croisements détectés pour SMA_5/SMA_13
+2025-10-21 18:12:56,120 - INFO - Croisements détectés pour SMA_5/SMA_15
+2025-10-21 18:12:56,441 - INFO - Croisements détectés pour SMA_5/SMA_20
+2025-10-21 18:12:56,768 - INFO - Croisements détectés pour SMA_5/SMA_21
+2025-10-21 18:12:57,093 - INFO - Croisements détectés pour SMA_5/SMA_26
+2025-10-21 18:12:57,414 - INFO - Croisements détectés pour SMA_5/SMA_30
+2025-10-21 18:12:57,740 - INFO - Croisements détectés pour SMA_8/SMA_20
+2025-10-21 18:12:58,065 - INFO - Croisements détectés pour SMA_8/SMA_21
+2025-10-21 18:12:58,388 - INFO - Croisements détectés pour SMA_8/SMA_26
+2025-10-21 18:12:58,709 - INFO - Croisements détectés pour SMA_8/SMA_30
+2025-10-21 18:12:59,030 - INFO - Croisements détectés pour SMA_8/SMA_34
+2025-10-21 18:12:59,357 - INFO - Croisements détectés pour SMA_10/SMA_20
+2025-10-21 18:12:59,679 - INFO - Croisements détectés pour SMA_10/SMA_21
+2025-10-21 18:13:00,001 - INFO - Croisements détectés pour SMA_10/SMA_26
+2025-10-21 18:13:00,322 - INFO - Croisements détectés pour SMA_10/SMA_30
+2025-10-21 18:13:00,641 - INFO - Croisements détectés pour SMA_10/SMA_34
+2025-10-21 18:13:00,961 - INFO - Croisements détectés pour SMA_10/SMA_50
+2025-10-21 18:13:01,288 - INFO - Croisements détectés pour SMA_10/SMA_55
+2025-10-21 18:13:01,612 - INFO - Croisements détectés pour SMA_12/SMA_26
+2025-10-21 18:13:01,937 - INFO - Croisements détectés pour SMA_12/SMA_30
+2025-10-21 18:13:02,265 - INFO - Croisements détectés pour SMA_12/SMA_34
+2025-10-21 18:13:02,593 - INFO - Croisements détectés pour SMA_12/SMA_50
+2025-10-21 18:13:02,920 - INFO - Croisements détectés pour SMA_12/SMA_55
+2025-10-21 18:13:03,259 - INFO - Croisements détectés pour SMA_13/SMA_26
+2025-10-21 18:13:03,595 - INFO - Croisements détectés pour SMA_13/SMA_30
+2025-10-21 18:13:03,924 - INFO - Croisements détectés pour SMA_13/SMA_34
+2025-10-21 18:13:04,259 - INFO - Croisements détectés pour SMA_13/SMA_50
+2025-10-21 18:13:04,594 - INFO - Croisements détectés pour SMA_13/SMA_55
+2025-10-21 18:13:04,936 - INFO - Croisements détectés pour SMA_15/SMA_30
+2025-10-21 18:13:05,266 - INFO - Croisements détectés pour SMA_15/SMA_34
+2025-10-21 18:13:05,595 - INFO - Croisements détectés pour SMA_15/SMA_50
+2025-10-21 18:13:05,922 - INFO - Croisements détectés pour SMA_15/SMA_55
+2025-10-21 18:13:06,250 - INFO - Croisements détectés pour SMA_15/SMA_89
+2025-10-21 18:13:06,572 - INFO - Croisements détectés pour SMA_20/SMA_50
+2025-10-21 18:13:06,904 - INFO - Croisements détectés pour SMA_20/SMA_55
+2025-10-21 18:13:07,237 - INFO - Croisements détectés pour SMA_20/SMA_89
+2025-10-21 18:13:07,567 - INFO - Croisements détectés pour SMA_20/SMA_100
+2025-10-21 18:13:07,890 - INFO - Croisements détectés pour SMA_21/SMA_50
+2025-10-21 18:13:08,212 - INFO - Croisements détectés pour SMA_21/SMA_55
+2025-10-21 18:13:08,539 - INFO - Croisements détectés pour SMA_21/SMA_89
+2025-10-21 18:13:08,864 - INFO - Croisements détectés pour SMA_21/SMA_100
+2025-10-21 18:13:09,186 - INFO - Croisements détectés pour SMA_26/SMA_55
+2025-10-21 18:13:09,512 - INFO - Croisements détectés pour SMA_26/SMA_89
+2025-10-21 18:13:09,838 - INFO - Croisements détectés pour SMA_26/SMA_100
+2025-10-21 18:13:10,170 - INFO - Croisements détectés pour SMA_30/SMA_89
+2025-10-21 18:13:10,494 - INFO - Croisements détectés pour SMA_30/SMA_100
+2025-10-21 18:13:10,817 - INFO - Croisements détectés pour SMA_34/SMA_89
+2025-10-21 18:13:11,145 - INFO - Croisements détectés pour SMA_34/SMA_100
+2025-10-21 18:13:11,469 - INFO - Croisements détectés pour SMA_34/SMA_200
+2025-10-21 18:13:11,792 - INFO - Croisements détectés pour SMA_50/SMA_100
+2025-10-21 18:13:12,111 - INFO - Croisements détectés pour SMA_50/SMA_200
+2025-10-21 18:13:12,430 - INFO - Croisements détectés pour SMA_55/SMA_200
+2025-10-21 18:13:12,755 - INFO - Croisements détectés pour SMA_89/SMA_200
+2025-10-21 18:13:13,078 - INFO - Croisements détectés pour SMA_100/SMA_200
+2025-10-21 18:13:13,398 - INFO - 65 combinaisons testées (croisements détectés).
+2025-10-21 18:13:13,402 - INFO - Saved results to results/results_20251021_161313.csv
+2025-10-21 18:42:40,733 - INFO - Starting CrossMM_Backtest (V1.3)
+2025-10-21 18:42:40,733 - INFO - Downloading data for MC.PA from 2020-01-01 to 2025-10-01
+2025-10-21 18:42:44,699 - INFO - Data loaded: 1474 rows
+2025-10-21 18:42:45,035 - INFO - Génération de 960 combinaisons valides de moyennes mobiles.
+2025-10-21 18:42:45,037 - INFO - Croisements détectés pour SMA_2/SMA_5
+2025-10-21 18:42:45,362 - INFO - Croisements détectés pour SMA_2/SMA_8
+2025-10-21 18:42:45,696 - INFO - Croisements détectés pour SMA_2/SMA_10
+2025-10-21 18:42:46,029 - INFO - Croisements détectés pour SMA_2/SMA_12
+2025-10-21 18:42:46,348 - INFO - Croisements détectés pour SMA_3/SMA_8
+2025-10-21 18:42:46,678 - INFO - Croisements détectés pour SMA_3/SMA_10
+2025-10-21 18:42:47,000 - INFO - Croisements détectés pour SMA_3/SMA_12
+2025-10-21 18:42:47,320 - INFO - Croisements détectés pour SMA_3/SMA_13
+2025-10-21 18:42:47,643 - INFO - Croisements détectés pour SMA_3/SMA_15
+2025-10-21 18:42:47,976 - INFO - Croisements détectés pour SMA_5/SMA_10
+2025-10-21 18:42:48,311 - INFO - Croisements détectés pour SMA_5/SMA_12
+2025-10-21 18:42:48,655 - INFO - Croisements détectés pour SMA_5/SMA_13
+2025-10-21 18:42:48,995 - INFO - Croisements détectés pour SMA_5/SMA_15
+2025-10-21 18:42:49,370 - INFO - Croisements détectés pour SMA_5/SMA_20
+2025-10-21 18:42:49,721 - INFO - Croisements détectés pour SMA_5/SMA_21
+2025-10-21 18:42:50,072 - INFO - Croisements détectés pour SMA_5/SMA_26
+2025-10-21 18:42:50,404 - INFO - Croisements détectés pour SMA_5/SMA_30
+2025-10-21 18:42:50,766 - INFO - Croisements détectés pour SMA_8/SMA_20
+2025-10-21 18:42:51,116 - INFO - Croisements détectés pour SMA_8/SMA_21
+2025-10-21 18:42:51,466 - INFO - Croisements détectés pour SMA_8/SMA_26
+2025-10-21 18:42:51,802 - INFO - Croisements détectés pour SMA_8/SMA_30
+2025-10-21 18:42:52,137 - INFO - Croisements détectés pour SMA_8/SMA_34
+2025-10-21 18:42:52,474 - INFO - Croisements détectés pour SMA_10/SMA_20
+2025-10-21 18:42:52,807 - INFO - Croisements détectés pour SMA_10/SMA_21
+2025-10-21 18:42:53,142 - INFO - Croisements détectés pour SMA_10/SMA_26
+2025-10-21 18:42:53,481 - INFO - Croisements détectés pour SMA_10/SMA_30
+2025-10-21 18:42:53,822 - INFO - Croisements détectés pour SMA_10/SMA_34
+2025-10-21 18:42:54,211 - INFO - Croisements détectés pour SMA_10/SMA_50
+2025-10-21 18:42:54,550 - INFO - Croisements détectés pour SMA_10/SMA_55
+2025-10-21 18:42:54,899 - INFO - Croisements détectés pour SMA_12/SMA_26
+2025-10-21 18:42:55,241 - INFO - Croisements détectés pour SMA_12/SMA_30
+2025-10-21 18:42:55,579 - INFO - Croisements détectés pour SMA_12/SMA_34
+2025-10-21 18:42:55,917 - INFO - Croisements détectés pour SMA_12/SMA_50
+2025-10-21 18:42:56,260 - INFO - Croisements détectés pour SMA_12/SMA_55
+2025-10-21 18:42:56,598 - INFO - Croisements détectés pour SMA_13/SMA_26
+2025-10-21 18:42:56,939 - INFO - Croisements détectés pour SMA_13/SMA_30
+2025-10-21 18:42:57,281 - INFO - Croisements détectés pour SMA_13/SMA_34
+2025-10-21 18:42:57,619 - INFO - Croisements détectés pour SMA_13/SMA_50
+2025-10-21 18:42:57,992 - INFO - Croisements détectés pour SMA_13/SMA_55
+2025-10-21 18:42:58,327 - INFO - Croisements détectés pour SMA_15/SMA_30
+2025-10-21 18:42:58,683 - INFO - Croisements détectés pour SMA_15/SMA_34
+2025-10-21 18:42:59,023 - INFO - Croisements détectés pour SMA_15/SMA_50
+2025-10-21 18:42:59,357 - INFO - Croisements détectés pour SMA_15/SMA_55
+2025-10-21 18:42:59,700 - INFO - Croisements détectés pour SMA_15/SMA_89
+2025-10-21 18:43:00,043 - INFO - Croisements détectés pour SMA_20/SMA_50
+2025-10-21 18:43:00,376 - INFO - Croisements détectés pour SMA_20/SMA_55
+2025-10-21 18:43:00,720 - INFO - Croisements détectés pour SMA_20/SMA_89
+2025-10-21 18:43:01,116 - INFO - Croisements détectés pour SMA_20/SMA_100
+2025-10-21 18:43:01,467 - INFO - Croisements détectés pour SMA_21/SMA_50
+2025-10-21 18:43:01,858 - INFO - Croisements détectés pour SMA_21/SMA_55
+2025-10-21 18:43:02,203 - INFO - Croisements détectés pour SMA_21/SMA_89
+2025-10-21 18:43:02,604 - INFO - Croisements détectés pour SMA_21/SMA_100
+2025-10-21 18:43:02,998 - INFO - Croisements détectés pour SMA_26/SMA_55
+2025-10-21 18:43:03,395 - INFO - Croisements détectés pour SMA_26/SMA_89
+2025-10-21 18:43:03,741 - INFO - Croisements détectés pour SMA_26/SMA_100
+2025-10-21 18:43:04,096 - INFO - Croisements détectés pour SMA_30/SMA_89
+2025-10-21 18:43:04,430 - INFO - Croisements détectés pour SMA_30/SMA_100
+2025-10-21 18:43:04,794 - INFO - Croisements détectés pour SMA_34/SMA_89
+2025-10-21 18:43:05,135 - INFO - Croisements détectés pour SMA_34/SMA_100
+2025-10-21 18:43:05,481 - INFO - Croisements détectés pour SMA_50/SMA_100
+2025-10-21 18:43:05,815 - INFO - Croisements détectés pour SMA_2/EMA_5
+2025-10-21 18:43:06,153 - INFO - Croisements détectés pour SMA_2/EMA_8
+2025-10-21 18:43:06,489 - INFO - Croisements détectés pour SMA_2/EMA_10
+2025-10-21 18:43:06,880 - INFO - Croisements détectés pour SMA_2/EMA_12
+2025-10-21 18:43:07,241 - INFO - Croisements détectés pour SMA_3/EMA_8
+2025-10-21 18:43:07,596 - INFO - Croisements détectés pour SMA_3/EMA_10
+2025-10-21 18:43:07,962 - INFO - Croisements détectés pour SMA_3/EMA_12
+2025-10-21 18:43:08,308 - INFO - Croisements détectés pour SMA_3/EMA_13
+2025-10-21 18:43:08,645 - INFO - Croisements détectés pour SMA_3/EMA_15
+2025-10-21 18:43:08,987 - INFO - Croisements détectés pour SMA_5/EMA_10
+2025-10-21 18:43:09,338 - INFO - Croisements détectés pour SMA_5/EMA_12
+2025-10-21 18:43:09,683 - INFO - Croisements détectés pour SMA_5/EMA_13
+2025-10-21 18:43:10,038 - INFO - Croisements détectés pour SMA_5/EMA_15
+2025-10-21 18:43:10,391 - INFO - Croisements détectés pour SMA_5/EMA_20
+2025-10-21 18:43:10,760 - INFO - Croisements détectés pour SMA_5/EMA_21
+2025-10-21 18:43:11,097 - INFO - Croisements détectés pour SMA_5/EMA_26
+2025-10-21 18:43:11,431 - INFO - Croisements détectés pour SMA_5/EMA_30
+2025-10-21 18:43:11,765 - INFO - Croisements détectés pour SMA_8/EMA_20
+2025-10-21 18:43:12,102 - INFO - Croisements détectés pour SMA_8/EMA_21
+2025-10-21 18:43:12,437 - INFO - Croisements détectés pour SMA_8/EMA_26
+2025-10-21 18:43:12,787 - INFO - Croisements détectés pour SMA_8/EMA_30
+2025-10-21 18:43:13,136 - INFO - Croisements détectés pour SMA_8/EMA_34
+2025-10-21 18:43:13,491 - INFO - Croisements détectés pour SMA_10/EMA_20
+2025-10-21 18:43:13,832 - INFO - Croisements détectés pour SMA_10/EMA_21
+2025-10-21 18:43:14,188 - INFO - Croisements détectés pour SMA_10/EMA_26
+2025-10-21 18:43:14,539 - INFO - Croisements détectés pour SMA_10/EMA_30
+2025-10-21 18:43:14,890 - INFO - Croisements détectés pour SMA_10/EMA_34
+2025-10-21 18:43:15,241 - INFO - Croisements détectés pour SMA_10/EMA_50
+2025-10-21 18:43:15,631 - INFO - Croisements détectés pour SMA_10/EMA_55
+2025-10-21 18:43:15,998 - INFO - Croisements détectés pour SMA_12/EMA_26
+2025-10-21 18:43:16,391 - INFO - Croisements détectés pour SMA_12/EMA_30
+2025-10-21 18:43:16,754 - INFO - Croisements détectés pour SMA_12/EMA_34
+2025-10-21 18:43:17,128 - INFO - Croisements détectés pour SMA_12/EMA_50
+2025-10-21 18:43:17,515 - INFO - Croisements détectés pour SMA_12/EMA_55
+2025-10-21 18:43:17,890 - INFO - Croisements détectés pour SMA_13/EMA_26
+2025-10-21 18:43:18,259 - INFO - Croisements détectés pour SMA_13/EMA_30
+2025-10-21 18:43:18,620 - INFO - Croisements détectés pour SMA_13/EMA_34
+2025-10-21 18:43:19,015 - INFO - Croisements détectés pour SMA_13/EMA_50
+2025-10-21 18:43:19,363 - INFO - Croisements détectés pour SMA_13/EMA_55
+2025-10-21 18:43:19,759 - INFO - Croisements détectés pour SMA_15/EMA_30
+2025-10-21 18:43:20,161 - INFO - Croisements détectés pour SMA_15/EMA_34
+2025-10-21 18:43:20,534 - INFO - Croisements détectés pour SMA_15/EMA_50
+2025-10-21 18:43:20,901 - INFO - Croisements détectés pour SMA_15/EMA_55
+2025-10-21 18:43:21,286 - INFO - Croisements détectés pour SMA_15/EMA_89
+2025-10-21 18:43:21,701 - INFO - Croisements détectés pour SMA_20/EMA_50
+2025-10-21 18:43:22,065 - INFO - Croisements détectés pour SMA_20/EMA_55
+2025-10-21 18:43:22,404 - INFO - Croisements détectés pour SMA_20/EMA_89
+2025-10-21 18:43:22,755 - INFO - Croisements détectés pour SMA_20/EMA_100
+2025-10-21 18:43:23,089 - INFO - Croisements détectés pour SMA_21/EMA_50
+2025-10-21 18:43:23,434 - INFO - Croisements détectés pour SMA_21/EMA_55
+2025-10-21 18:43:23,769 - INFO - Croisements détectés pour SMA_21/EMA_89
+2025-10-21 18:43:24,128 - INFO - Croisements détectés pour SMA_21/EMA_100
+2025-10-21 18:43:24,499 - INFO - Croisements détectés pour SMA_26/EMA_55
+2025-10-21 18:43:24,882 - INFO - Croisements détectés pour SMA_26/EMA_89
+2025-10-21 18:43:25,219 - INFO - Croisements détectés pour SMA_26/EMA_100
+2025-10-21 18:43:25,562 - INFO - Croisements détectés pour SMA_30/EMA_89
+2025-10-21 18:43:25,897 - INFO - Croisements détectés pour SMA_30/EMA_100
+2025-10-21 18:43:26,234 - INFO - Croisements détectés pour SMA_34/EMA_89
+2025-10-21 18:43:26,577 - INFO - Croisements détectés pour SMA_34/EMA_100
+2025-10-21 18:43:26,940 - INFO - Croisements détectés pour SMA_50/EMA_100
+2025-10-21 18:43:27,276 - INFO - Croisements détectés pour SMA_2/WMA_5
+2025-10-21 18:43:27,605 - INFO - Croisements détectés pour SMA_2/WMA_8
+2025-10-21 18:43:27,944 - INFO - Croisements détectés pour SMA_2/WMA_10
+2025-10-21 18:43:28,324 - INFO - Croisements détectés pour SMA_2/WMA_12
+2025-10-21 18:43:28,659 - INFO - Croisements détectés pour SMA_3/WMA_8
+2025-10-21 18:43:28,996 - INFO - Croisements détectés pour SMA_3/WMA_10
+2025-10-21 18:43:29,332 - INFO - Croisements détectés pour SMA_3/WMA_12
+2025-10-21 18:43:29,667 - INFO - Croisements détectés pour SMA_3/WMA_13
+2025-10-21 18:43:29,997 - INFO - Croisements détectés pour SMA_3/WMA_15
+2025-10-21 18:43:30,329 - INFO - Croisements détectés pour SMA_5/WMA_10
+2025-10-21 18:43:30,666 - INFO - Croisements détectés pour SMA_5/WMA_12
+2025-10-21 18:43:31,031 - INFO - Croisements détectés pour SMA_5/WMA_13
+2025-10-21 18:43:31,368 - INFO - Croisements détectés pour SMA_5/WMA_15
+2025-10-21 18:43:31,706 - INFO - Croisements détectés pour SMA_5/WMA_20
+2025-10-21 18:43:32,046 - INFO - Croisements détectés pour SMA_5/WMA_21
+2025-10-21 18:43:32,378 - INFO - Croisements détectés pour SMA_5/WMA_26
+2025-10-21 18:43:32,727 - INFO - Croisements détectés pour SMA_5/WMA_30
+2025-10-21 18:43:33,070 - INFO - Croisements détectés pour SMA_8/WMA_20
+2025-10-21 18:43:33,413 - INFO - Croisements détectés pour SMA_8/WMA_21
+2025-10-21 18:43:33,753 - INFO - Croisements détectés pour SMA_8/WMA_26
+2025-10-21 18:43:34,095 - INFO - Croisements détectés pour SMA_8/WMA_30
+2025-10-21 18:43:34,465 - INFO - Croisements détectés pour SMA_8/WMA_34
+2025-10-21 18:43:34,840 - INFO - Croisements détectés pour SMA_10/WMA_20
+2025-10-21 18:43:35,191 - INFO - Croisements détectés pour SMA_10/WMA_21
+2025-10-21 18:43:35,552 - INFO - Croisements détectés pour SMA_10/WMA_26
+2025-10-21 18:43:35,908 - INFO - Croisements détectés pour SMA_10/WMA_30
+2025-10-21 18:43:36,251 - INFO - Croisements détectés pour SMA_10/WMA_34
+2025-10-21 18:43:36,592 - INFO - Croisements détectés pour SMA_10/WMA_50
+2025-10-21 18:43:36,928 - INFO - Croisements détectés pour SMA_10/WMA_55
+2025-10-21 18:43:37,270 - INFO - Croisements détectés pour SMA_12/WMA_26
+2025-10-21 18:43:37,614 - INFO - Croisements détectés pour SMA_12/WMA_30
+2025-10-21 18:43:37,963 - INFO - Croisements détectés pour SMA_12/WMA_34
+2025-10-21 18:43:38,339 - INFO - Croisements détectés pour SMA_12/WMA_50
+2025-10-21 18:43:38,692 - INFO - Croisements détectés pour SMA_12/WMA_55
+2025-10-21 18:43:39,044 - INFO - Croisements détectés pour SMA_13/WMA_26
+2025-10-21 18:43:39,389 - INFO - Croisements détectés pour SMA_13/WMA_30
+2025-10-21 18:43:39,731 - INFO - Croisements détectés pour SMA_13/WMA_34
+2025-10-21 18:43:40,066 - INFO - Croisements détectés pour SMA_13/WMA_50
+2025-10-21 18:43:40,407 - INFO - Croisements détectés pour SMA_13/WMA_55
+2025-10-21 18:43:40,745 - INFO - Croisements détectés pour SMA_15/WMA_30
+2025-10-21 18:43:41,082 - INFO - Croisements détectés pour SMA_15/WMA_34
+2025-10-21 18:44:13,203 - INFO - Starting CrossMM_Backtest (V1.3)
+2025-10-21 18:44:13,203 - INFO - Downloading data for MC.PA from 2020-01-01 to 2025-10-01
+2025-10-21 18:44:13,858 - INFO - Data loaded: 1474 rows
+2025-10-21 18:44:13,872 - INFO - Génération de 65 combinaisons valides de moyennes mobiles.
+2025-10-21 18:44:13,873 - INFO - Croisements détectés pour SMA_2/SMA_5
+2025-10-21 18:44:32,314 - INFO - Starting CrossMM_Backtest (V1.3)
+2025-10-21 18:44:32,314 - INFO - Downloading data for MC.PA from 2020-01-01 to 2025-10-01
+2025-10-21 18:44:33,197 - INFO - Data loaded: 1474 rows
+2025-10-21 18:44:33,211 - INFO - Génération de 65 combinaisons valides de moyennes mobiles.
+2025-10-21 18:44:33,212 - INFO - Croisements détectés pour SMA_2/SMA_5
+2025-10-21 18:46:51,478 - INFO - Starting CrossMM_Backtest (V1.3)
+2025-10-21 18:46:51,478 - INFO - Downloading data for MC.PA from 2020-01-01 to 2025-10-01
+2025-10-21 18:46:52,041 - INFO - Data loaded: 1474 rows
+2025-10-21 18:46:52,056 - INFO - Génération de 65 combinaisons valides de moyennes mobiles.
+2025-10-21 18:46:52,058 - INFO - Croisements détectés pour SMA_2/SMA_5
+2025-10-21 18:50:18,536 - INFO - Starting CrossMM_Backtest (V1.3)
+2025-10-21 18:50:18,537 - INFO - Downloading data for MC.PA from 2020-01-01 to 2025-10-01
+2025-10-21 18:50:19,490 - INFO - Data loaded: 1474 rows
+2025-10-21 18:50:19,504 - INFO - Génération de 65 combinaisons valides de moyennes mobiles.
+2025-10-21 18:50:19,506 - INFO - Croisements détectés pour SMA_2/SMA_5
+2025-10-21 18:50:19,578 - INFO - Croisements détectés pour SMA_2/SMA_8
+2025-10-21 18:50:19,623 - INFO - Croisements détectés pour SMA_2/SMA_10
+2025-10-21 18:50:19,664 - INFO - Croisements détectés pour SMA_2/SMA_12
+2025-10-21 18:50:19,704 - INFO - Croisements détectés pour SMA_3/SMA_8
+2025-10-21 18:50:19,747 - INFO - Croisements détectés pour SMA_3/SMA_10
+2025-10-21 18:50:19,784 - INFO - Croisements détectés pour SMA_3/SMA_12
+2025-10-21 18:50:19,821 - INFO - Croisements détectés pour SMA_3/SMA_13
+2025-10-21 18:50:19,857 - INFO - Croisements détectés pour SMA_3/SMA_15
+2025-10-21 18:50:19,895 - INFO - Croisements détectés pour SMA_5/SMA_10
+2025-10-21 18:50:19,931 - INFO - Croisements détectés pour SMA_5/SMA_12
+2025-10-21 18:50:19,966 - INFO - Croisements détectés pour SMA_5/SMA_13
+2025-10-21 18:50:19,999 - INFO - Croisements détectés pour SMA_5/SMA_15
+2025-10-21 18:50:20,030 - INFO - Croisements détectés pour SMA_5/SMA_20
+2025-10-21 18:50:20,055 - INFO - Croisements détectés pour SMA_5/SMA_21
+2025-10-21 18:50:20,082 - INFO - Croisements détectés pour SMA_5/SMA_26
+2025-10-21 18:50:20,107 - INFO - Croisements détectés pour SMA_5/SMA_30
+2025-10-21 18:50:20,129 - INFO - Croisements détectés pour SMA_8/SMA_20
+2025-10-21 18:50:20,155 - INFO - Croisements détectés pour SMA_8/SMA_21
+2025-10-21 18:50:20,179 - INFO - Croisements détectés pour SMA_8/SMA_26
+2025-10-21 18:50:20,205 - INFO - Croisements détectés pour SMA_8/SMA_30
+2025-10-21 18:50:20,225 - INFO - Croisements détectés pour SMA_8/SMA_34
+2025-10-21 18:50:20,248 - INFO - Croisements détectés pour SMA_10/SMA_20
+2025-10-21 18:50:20,271 - INFO - Croisements détectés pour SMA_10/SMA_21
+2025-10-21 18:50:20,293 - INFO - Croisements détectés pour SMA_10/SMA_26
+2025-10-21 18:50:20,315 - INFO - Croisements détectés pour SMA_10/SMA_30
+2025-10-21 18:50:20,335 - INFO - Croisements détectés pour SMA_10/SMA_34
+2025-10-21 18:50:20,354 - INFO - Croisements détectés pour SMA_10/SMA_50
+2025-10-21 18:50:20,370 - INFO - Croisements détectés pour SMA_10/SMA_55
+2025-10-21 18:50:20,386 - INFO - Croisements détectés pour SMA_12/SMA_26
+2025-10-21 18:50:20,406 - INFO - Croisements détectés pour SMA_12/SMA_30
+2025-10-21 18:50:20,426 - INFO - Croisements détectés pour SMA_12/SMA_34
+2025-10-21 18:50:20,445 - INFO - Croisements détectés pour SMA_12/SMA_50
+2025-10-21 18:50:20,460 - INFO - Croisements détectés pour SMA_12/SMA_55
+2025-10-21 18:50:20,475 - INFO - Croisements détectés pour SMA_13/SMA_26
+2025-10-21 18:50:20,495 - INFO - Croisements détectés pour SMA_13/SMA_30
+2025-10-21 18:50:20,516 - INFO - Croisements détectés pour SMA_13/SMA_34
+2025-10-21 18:50:20,537 - INFO - Croisements détectés pour SMA_13/SMA_50
+2025-10-21 18:50:20,554 - INFO - Croisements détectés pour SMA_13/SMA_55
+2025-10-21 18:50:20,569 - INFO - Croisements détectés pour SMA_15/SMA_30
+2025-10-21 18:50:20,587 - INFO - Croisements détectés pour SMA_15/SMA_34
+2025-10-21 18:50:20,606 - INFO - Croisements détectés pour SMA_15/SMA_50
+2025-10-21 18:50:20,621 - INFO - Croisements détectés pour SMA_15/SMA_55
+2025-10-21 18:50:20,636 - INFO - Croisements détectés pour SMA_15/SMA_89
+2025-10-21 18:50:20,649 - INFO - Croisements détectés pour SMA_20/SMA_50
+2025-10-21 18:50:20,665 - INFO - Croisements détectés pour SMA_20/SMA_55
+2025-10-21 18:50:20,681 - INFO - Croisements détectés pour SMA_20/SMA_89
+2025-10-21 18:50:20,695 - INFO - Croisements détectés pour SMA_20/SMA_100
+2025-10-21 18:50:20,710 - INFO - Croisements détectés pour SMA_21/SMA_50
+2025-10-21 18:50:20,725 - INFO - Croisements détectés pour SMA_21/SMA_55
+2025-10-21 18:50:20,740 - INFO - Croisements détectés pour SMA_21/SMA_89
+2025-10-21 18:50:20,753 - INFO - Croisements détectés pour SMA_21/SMA_100
+2025-10-21 18:50:20,767 - INFO - Croisements détectés pour SMA_26/SMA_55
+2025-10-21 18:50:20,782 - INFO - Croisements détectés pour SMA_26/SMA_89
+2025-10-21 18:50:20,795 - INFO - Croisements détectés pour SMA_26/SMA_100
+2025-10-21 18:50:20,810 - INFO - Croisements détectés pour SMA_30/SMA_89
+2025-10-21 18:50:20,823 - INFO - Croisements détectés pour SMA_30/SMA_100
+2025-10-21 18:50:20,836 - INFO - Croisements détectés pour SMA_34/SMA_89
+2025-10-21 18:50:20,849 - INFO - Croisements détectés pour SMA_34/SMA_100
+2025-10-21 18:50:20,863 - INFO - Croisements détectés pour SMA_34/SMA_200
+2025-10-21 18:50:20,874 - INFO - Croisements détectés pour SMA_50/SMA_100
+2025-10-21 18:50:20,887 - INFO - Croisements détectés pour SMA_50/SMA_200
+2025-10-21 18:50:20,897 - INFO - Croisements détectés pour SMA_55/SMA_200
+2025-10-21 18:50:20,910 - INFO - Croisements détectés pour SMA_89/SMA_200
+2025-10-21 18:50:20,921 - INFO - Croisements détectés pour SMA_100/SMA_200
+2025-10-21 18:50:20,932 - INFO - 65 combinaisons testées (croisements détectés).
+2025-10-21 18:50:20,982 - INFO - Saved results to results/results_20251021_165020.csv
+2025-10-21 18:51:55,284 - INFO - Starting CrossMM_Backtest (V1.3)
+2025-10-21 18:51:55,285 - INFO - Downloading data for MC.PA from 2020-01-01 to 2025-10-01
+2025-10-21 18:51:56,139 - INFO - Data loaded: 1474 rows
+2025-10-21 18:51:56,154 - INFO - Génération de 65 combinaisons valides de moyennes mobiles.
+2025-10-21 18:51:56,156 - INFO - Croisements détectés pour SMA_2/SMA_5
+2025-10-21 18:51:56,430 - INFO - Croisements détectés pour SMA_2/SMA_8
+2025-10-21 18:51:56,576 - INFO - Croisements détectés pour SMA_2/SMA_10
+2025-10-21 18:51:56,691 - INFO - Croisements détectés pour SMA_2/SMA_12
+2025-10-21 18:51:56,801 - INFO - Croisements détectés pour SMA_3/SMA_8
+2025-10-21 18:51:56,923 - INFO - Croisements détectés pour SMA_3/SMA_10
+2025-10-21 18:51:57,028 - INFO - Croisements détectés pour SMA_3/SMA_12
+2025-10-21 18:51:57,130 - INFO - Croisements détectés pour SMA_3/SMA_13
+2025-10-21 18:51:57,223 - INFO - Croisements détectés pour SMA_3/SMA_15
+2025-10-21 18:51:57,316 - INFO - Croisements détectés pour SMA_5/SMA_10
+2025-10-21 18:51:57,412 - INFO - Croisements détectés pour SMA_5/SMA_12
+2025-10-21 18:51:57,508 - INFO - Croisements détectés pour SMA_5/SMA_13
+2025-10-21 18:51:57,591 - INFO - Croisements détectés pour SMA_5/SMA_15
+2025-10-21 18:51:57,667 - INFO - Croisements détectés pour SMA_5/SMA_20
+2025-10-21 18:51:57,727 - INFO - Croisements détectés pour SMA_5/SMA_21
+2025-10-21 18:51:57,788 - INFO - Croisements détectés pour SMA_5/SMA_26
+2025-10-21 18:51:57,850 - INFO - Croisements détectés pour SMA_5/SMA_30
+2025-10-21 18:51:57,901 - INFO - Croisements détectés pour SMA_8/SMA_20
+2025-10-21 18:51:57,959 - INFO - Croisements détectés pour SMA_8/SMA_21
+2025-10-21 18:51:58,013 - INFO - Croisements détectés pour SMA_8/SMA_26
+2025-10-21 18:51:58,061 - INFO - Croisements détectés pour SMA_8/SMA_30
+2025-10-21 18:51:58,106 - INFO - Croisements détectés pour SMA_8/SMA_34
+2025-10-21 18:51:58,149 - INFO - Croisements détectés pour SMA_10/SMA_20
+2025-10-21 18:51:58,203 - INFO - Croisements détectés pour SMA_10/SMA_21
+2025-10-21 18:51:58,261 - INFO - Croisements détectés pour SMA_10/SMA_26
+2025-10-21 18:51:58,309 - INFO - Croisements détectés pour SMA_10/SMA_30
+2025-10-21 18:51:58,353 - INFO - Croisements détectés pour SMA_10/SMA_34
+2025-10-21 18:51:58,393 - INFO - Croisements détectés pour SMA_10/SMA_50
+2025-10-21 18:51:58,422 - INFO - Croisements détectés pour SMA_10/SMA_55
+2025-10-21 18:51:58,447 - INFO - Croisements détectés pour SMA_12/SMA_26
+2025-10-21 18:51:58,492 - INFO - Croisements détectés pour SMA_12/SMA_30
+2025-10-21 18:51:58,535 - INFO - Croisements détectés pour SMA_12/SMA_34
+2025-10-21 18:51:58,576 - INFO - Croisements détectés pour SMA_12/SMA_50
+2025-10-21 18:51:58,607 - INFO - Croisements détectés pour SMA_12/SMA_55
+2025-10-21 18:51:58,637 - INFO - Croisements détectés pour SMA_13/SMA_26
+2025-10-21 18:51:58,683 - INFO - Croisements détectés pour SMA_13/SMA_30
+2025-10-21 18:51:58,730 - INFO - Croisements détectés pour SMA_13/SMA_34
+2025-10-21 18:51:58,772 - INFO - Croisements détectés pour SMA_13/SMA_50
+2025-10-21 18:51:58,804 - INFO - Croisements détectés pour SMA_13/SMA_55
+2025-10-21 18:51:58,828 - INFO - Croisements détectés pour SMA_15/SMA_30
+2025-10-21 18:51:58,871 - INFO - Croisements détectés pour SMA_15/SMA_34
+2025-10-21 18:51:58,912 - INFO - Croisements détectés pour SMA_15/SMA_50
+2025-10-21 18:51:58,941 - INFO - Croisements détectés pour SMA_15/SMA_55
+2025-10-21 18:51:58,963 - INFO - Croisements détectés pour SMA_15/SMA_89
+2025-10-21 18:51:58,987 - INFO - Croisements détectés pour SMA_20/SMA_50
+2025-10-21 18:51:59,017 - INFO - Croisements détectés pour SMA_20/SMA_55
+2025-10-21 18:51:59,052 - INFO - Croisements détectés pour SMA_20/SMA_89
+2025-10-21 18:51:59,071 - INFO - Croisements détectés pour SMA_20/SMA_100
+2025-10-21 18:51:59,098 - INFO - Croisements détectés pour SMA_21/SMA_50
+2025-10-21 18:51:59,129 - INFO - Croisements détectés pour SMA_21/SMA_55
+2025-10-21 18:51:59,155 - INFO - Croisements détectés pour SMA_21/SMA_89
+2025-10-21 18:51:59,175 - INFO - Croisements détectés pour SMA_21/SMA_100
+2025-10-21 18:51:59,196 - INFO - Croisements détectés pour SMA_26/SMA_55
+2025-10-21 18:51:59,223 - INFO - Croisements détectés pour SMA_26/SMA_89
+2025-10-21 18:51:59,250 - INFO - Croisements détectés pour SMA_26/SMA_100
+2025-10-21 18:51:59,269 - INFO - Croisements détectés pour SMA_30/SMA_89
+2025-10-21 18:51:59,291 - INFO - Croisements détectés pour SMA_30/SMA_100
+2025-10-21 18:51:59,310 - INFO - Croisements détectés pour SMA_34/SMA_89
+2025-10-21 18:51:59,328 - INFO - Croisements détectés pour SMA_34/SMA_100
+2025-10-21 18:51:59,345 - INFO - Croisements détectés pour SMA_34/SMA_200
+2025-10-21 18:51:59,362 - INFO - Croisements détectés pour SMA_50/SMA_100
+2025-10-21 18:51:59,378 - INFO - Croisements détectés pour SMA_50/SMA_200
+2025-10-21 18:51:59,392 - INFO - Croisements détectés pour SMA_55/SMA_200
+2025-10-21 18:51:59,406 - INFO - Croisements détectés pour SMA_89/SMA_200
+2025-10-21 18:51:59,421 - INFO - Croisements détectés pour SMA_100/SMA_200
+2025-10-21 18:51:59,436 - INFO - 65 combinaisons testées (croisements détectés).
+2025-10-21 18:51:59,450 - INFO - Saved results to results/results_20251021_165159.csv
+2025-10-21 18:55:37,330 - INFO - Starting CrossMM_Backtest (V1.3)
+2025-10-21 18:55:37,330 - INFO - Downloading data for MC.PA from 2020-01-01 to 2025-10-01
+2025-10-21 18:55:37,929 - INFO - Data loaded: 1474 rows
+2025-10-21 18:55:37,944 - INFO - Génération de 65 combinaisons valides de moyennes mobiles.
+2025-10-21 18:55:41,036 - INFO - 65 combinaisons testées (croisements détectés).
+2025-10-21 18:55:41,050 - INFO - Saved results to results/results_20251021_165541.csv
+2025-10-21 19:01:58,308 - INFO - Starting CrossMM_Backtest (V1.3)
+2025-10-21 19:01:58,309 - INFO - Downloading data for MC.PA from 2020-01-01 to 2025-10-01
+2025-10-21 19:01:59,882 - INFO - Data loaded: 1474 rows
+2025-10-21 19:01:59,896 - INFO - Génération de 65 combinaisons valides de moyennes mobiles.
+2025-10-21 19:02:22,597 - INFO - Starting CrossMM_Backtest (V1.3)
+2025-10-21 19:02:22,598 - INFO - Downloading data for MC.PA from 2020-01-01 to 2025-10-01
+2025-10-21 19:02:34,287 - INFO - Data loaded: 1474 rows
+2025-10-21 19:02:34,302 - INFO - Génération de 65 combinaisons valides de moyennes mobiles.
+2025-10-21 19:04:00,549 - INFO - Starting CrossMM_Backtest (V1.3)
+2025-10-21 19:04:00,549 - INFO - Downloading data for MC.PA from 2020-01-01 to 2025-10-01
+2025-10-21 19:04:05,566 - INFO - Data loaded: 1474 rows
+2025-10-21 19:04:05,580 - INFO - Génération de 65 combinaisons valides de moyennes mobiles.
+2025-10-21 19:04:08,703 - INFO - 65 combinaisons testées (croisements détectés).
+2025-10-21 19:04:08,718 - INFO - Saved results to results/results_20251021_170408.csv
+2025-10-21 19:04:25,261 - INFO - Starting CrossMM_Backtest (V1.3)
+2025-10-21 19:04:25,261 - INFO - Downloading data for MC.PA from 2020-01-01 to 2025-10-01
+2025-10-21 19:04:29,829 - INFO - Data loaded: 1474 rows
+2025-10-21 19:04:29,842 - INFO - Génération de 65 combinaisons valides de moyennes mobiles.
+2025-10-21 19:05:07,734 - INFO - Starting CrossMM_Backtest (V1.3)
+2025-10-21 19:05:07,735 - INFO - Downloading data for MC.PA from 2020-01-01 to 2025-10-01
+2025-10-21 19:05:17,060 - INFO - Data loaded: 1474 rows
+2025-10-21 19:05:17,074 - INFO - Génération de 65 combinaisons valides de moyennes mobiles.
+2025-10-21 19:05:20,178 - INFO - 65 combinaisons testées (croisements détectés).
+2025-10-21 19:05:20,192 - INFO - Saved results to results/results_20251021_170520.csv
+2025-10-21 19:06:17,585 - INFO - Starting CrossMM_Backtest (V1.3)
+2025-10-21 19:06:17,586 - INFO - Downloading data for MC.PA from 2020-01-01 to 2025-10-01
+2025-10-21 19:06:20,244 - INFO - Data loaded: 1474 rows
+2025-10-21 19:06:20,258 - INFO - Génération de 65 combinaisons valides de moyennes mobiles.
+2025-10-21 19:06:23,314 - INFO - 65 combinaisons testées (croisements détectés).
+2025-10-21 19:06:23,329 - INFO - Saved results to results/results_20251021_170623.csv
+2025-10-21 19:06:32,895 - INFO - Starting CrossMM_Backtest (V1.3)
+2025-10-21 19:06:32,896 - INFO - Downloading data for MC.PA from 2020-01-01 to 2025-10-01
+2025-10-21 19:06:34,045 - INFO - Data loaded: 1474 rows
+2025-10-21 19:06:34,059 - INFO - Génération de 65 combinaisons valides de moyennes mobiles.
+2025-10-21 19:08:13,173 - INFO - Starting CrossMM_Backtest (V1.3)
+2025-10-21 19:08:13,173 - INFO - Downloading data for MC.PA from 2020-01-01 to 2025-10-01
+2025-10-21 19:08:17,740 - INFO - Data loaded: 1474 rows
+2025-10-21 19:08:17,754 - INFO - Génération de 65 combinaisons valides de moyennes mobiles.
+2025-10-21 19:10:58,902 - INFO - Starting CrossMM_Backtest (V1.3)
+2025-10-21 19:10:58,902 - INFO - Downloading data for MC.PA from 2020-01-01 to 2025-10-01
+2025-10-21 19:11:00,547 - INFO - Data loaded: 1474 rows
+2025-10-21 19:11:00,564 - INFO - Génération de 65 combinaisons valides de moyennes mobiles.
+2025-10-21 19:11:05,167 - INFO - Starting CrossMM_Backtest (V1.3)
+2025-10-21 19:11:05,168 - INFO - Downloading data for MC.PA from 2020-01-01 to 2025-10-01
+2025-10-21 19:11:09,467 - INFO - Data loaded: 1474 rows
+2025-10-21 19:11:09,481 - INFO - Génération de 65 combinaisons valides de moyennes mobiles.
+2025-10-21 19:11:15,352 - INFO - Starting CrossMM_Backtest (V1.3)
+2025-10-21 19:11:15,352 - INFO - Downloading data for MC.PA from 2020-01-01 to 2025-10-01
+2025-10-21 19:11:18,978 - INFO - Data loaded: 1474 rows
+2025-10-21 19:11:18,992 - INFO - Génération de 65 combinaisons valides de moyennes mobiles.
+2025-10-21 19:11:22,005 - INFO - 65 combinaisons testées (croisements détectés).
+2025-10-21 19:11:22,020 - INFO - Saved results to results/results_20251021_171122.csv

@@ -1,11 +1,11 @@
 {
-    "symbol": "AAPL",
-    "start_date": "2020-01-01",
-    "end_date": "2025-01-01",
-    "initial_capital": 10000,
-    "max_allocation": 0.2,
-    "ma_types": ["SMA", "EMA"],
-    "ma_periods": [10, 20, 50, 100],
-    "short_periods": [10, 20],
-    "long_periods": [50, 100]
+  "symbol": "MC.PA",
+  "start_date": "2020-01-01",
+  "end_date": "2025-10-01",
+  "initial_capital": 10000,
+  "max_allocation": 0.2,
+  "ma_types": ["SMA", "EMA", "WMA", "HMA"],
+  "ma_periods": [2, 3, 5, 8, 10, 12, 13, 15, 20, 21, 26, 30, 34, 50, 55, 89, 100, 200],
+  "ratio_min": 2,
+  "ratio_max": 6
 }
