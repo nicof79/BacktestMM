@@ -1,0 +1,11 @@
+{
+    "symbol": "AAPL",
+    "start_date": "2020-01-01",
+    "end_date": "2025-01-01",
+    "initial_capital": 10000,
+    "max_allocation": 0.2,
+    "ma_types": ["SMA", "EMA"],
+    "ma_periods": [10, 20, 50, 100],
+    "short_periods": [10, 20],
+    "long_periods": [50, 100]
+}
