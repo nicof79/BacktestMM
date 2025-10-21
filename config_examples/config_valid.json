@@ -1,0 +1,15 @@
+{
+  "symbols": ["MC.PA", "AAPL"],
+  "start_date": "2020-01-01",
+  "end_date": "2025-01-01",
+  "initial_capital": 10000.0,
+  "max_allocation_pct": 0.2,
+  "periods": [5, 10, 20, 50, 100],
+  "ma_types": ["SMA", "EMA"],
+  "ratio_min": 1.5,
+  "ratio_max": 10.0,
+  "min_data_days": 200,
+  "mode": {"vector_scan": true, "full_backtest": true, "pipeline_filter_top_n": 50},
+  "vector_metrics": {"metric": "mean_return_per_trade", "min_trades": 10},
+  "download": {"source": "yfinance", "progress": false}
+}

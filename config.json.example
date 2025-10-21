@@ -1,0 +1,22 @@
+{
+  "symbols": ["MC.PA"],
+  "start_date": "2020-01-01",
+  "end_date": "2025-10-01",
+  "initial_capital": 10000.0,
+  "max_allocation_pct": 0.2,
+  "periods": [2,3,5,8,10,12,13,15,20,21,26,30,34,50,55,89,100,144,200],
+  "ma_types": ["SMA"],
+  "ratio_min": 1.5,
+  "ratio_max": 13.0,
+  "min_data_days": 200,
+  "mode": {
+    "vector_scan": true,
+    "full_backtest": false,
+    "pipeline_filter_top_n": 50
+  },
+  "vector_metrics": {
+    "metric": "mean_return_per_trade",
+    "min_trades": 10
+  },
+  "download": { "source": "yfinance", "progress": false }
+}
